@@ -1,3 +1,7 @@
 from django.contrib import admin
+from backendminiapp.models import Legislator
 
-# Register your models here.
+
+class LegislatorAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(Legislator, LegislatorAdmin)
